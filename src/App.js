@@ -16,13 +16,12 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar totalCounters={this.state.counters.filter((c) => c.value !== 0).length} />
-        <main className="container">
+        <main className='container'>
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onDelete={this.handleDelete}
-            onIncrement={this.handleIncrement}
-          ></Counters>
+            onIncrement={this.handleIncrement}></Counters>
         </main>
       </React.Fragment>
     );
